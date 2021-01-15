@@ -1,0 +1,86 @@
+.frontpage {
+    position: relative;
+
+    &__img {
+        height: 95vh;
+        background: url('../../images/noodle_bowl.jpg');
+        background-position: 25%;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+
+    .menu-img {
+        background: url('../../images/padthai.png');
+    }
+
+    .location-img {
+        background: url("../../images/thaiChefs.jpg");
+        background-position: 100%;
+    }
+
+    .fold-img {
+        height: 40vh;
+        background-size: cover;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    &__txt {
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(rgba(255, 51, 0, 0), 35%, $red 100%);
+        color: white;
+        padding: 5rem 10% 2rem;
+        line-height: 0.8;
+        font-size: 1.5rem;
+        user-select: none;
+    }
+}
+
+.red-slant {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .red-slant {
+        display: inline;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 87vw;
+    }
+
+    .frontpage {
+        &__img {
+            background-position: 15vw;
+            background-size: cover;
+            height: 70vh;
+            margin: 15vh 0;
+        }
+
+        &__txt {
+            width: 50vw;
+            height: 100%;
+            background: none;
+            display: flex;
+            padding: 0;
+
+            &__content {
+                margin: 0 auto;
+                align-self: center;
+                position: absolute;
+                //right:13vw;
+                //text-align:left;
+                padding-left: $left-align;
+
+                h1 {
+                    font-size: 6vw;
+                }
+            }
+        }
+    }
+
+}

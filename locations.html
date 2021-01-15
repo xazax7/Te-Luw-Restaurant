@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <title>Ta Lew Thai Bistro</title>
+   <link href="stylesNew.css" rel="stylesheet">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href="https://fonts.googleapis.com/css?family=Play&display=swap" rel="stylesheet">
+   <!--?-->
+   <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+   <!--Title Font-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!--Hamburger menu icon-->
+
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+
+<body>
+   <div class="bg"></div>
+   <div class="reservationsForm">
+      <label for="restaurantID">Reservations</label>
+      <select name="restaurantID" id="restaurantID" placeholder="Select a Location">
+         <option value selected>- Select a Location -</option>
+         <option value="locGilbert">Gilbert</option>
+         <option value="locScottsdale">Scottsdale</option>
+         <option value="locTucson">Tucson</option>
+      </select>
+
+      <label for="partySize">Party Size</label>
+      <select name="partySize" id="partySize">
+         <option value="1">1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+         <option value="5">5</option>
+         <option value="6">6</option>
+         <option value="7">7</option>
+         <option value="8">8</option>
+         <option value="9">9</option>
+         <option value="10">10</option>
+         <option value="11">11</option>
+         <option value="12">12</option>
+         <option value="13">13</option>
+         <option value="14">14</option>
+         <option value="15">15</option>
+         <option value="16">16</option>
+         <option value="17">17</option>
+         <option value="18">18</option>
+         <option value="19">19</option>
+         <option value="20">20</option>
+      </select>
+
+      <label for="reserveDate">Date</label>
+      <input type="date" id="reserveDate" name="reserveDate">
+
+      <label for="reserveTime">Time</label>
+      <select name="reserveTime" id="reserveTime"></select>
+
+      <a href="" id="reserveBtn">Reserve Now</a>
+   </div>
+
+
+
+   <header>
+      <div class="headerBg"></div>
+      <a href="index.html" class="title">Ta Lew Thai Bistro
+      </a>
+
+
+
+      <div class="navBar">
+         <div id="navMenu" class="nav">
+            <a href="">Menu</a>
+            <a href="">Locations</a>
+            <a href="">Banquets</a>
+            <a href="">Pans To-Go</a>
+            <a href="">Order Online</a>
+            <a href="">Gift Cards</a>
+            <a href="">Nutrition</a>
+         </div>
+         <a href="javascript:void(0);" class="navDropDownBtn" id="navBtn" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+         </a>
+      </div>
+   </header>
+   <main>
+
+
+      <div class="row">
+         <h1>Locations</h1>
+         <div class="map">
+            <iframe
+               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6665.189733116129!2d-111.79251329101562!3d33.35553254123805!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba916df0dded3%3A0x6a54b4bec0827539!2s41%20W%20Page%20Ave%2C%20Gilbert%2C%20AZ%2085233!5e0!3m2!1sen!2sus!4v1579310681173!5m2!1sen!2sus"
+               width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+         </div>
+
+         <div class="mdBlock">
+            <div class="detail">
+               <h3>1) Gilbert | Old Town Gilbert</h3>
+               <div class="detailInfo">
+                  <p>
+                     2234 W. Warner Road
+                  </p>
+                  <p>Gilbert, AZ 85295</p>
+                  <p>(480)523-5234</p>
+               </div>
+               <div class="detailInfo">
+                  <p>Sun-Thu: 11am-10pm</p>
+                  <p>Fri &amp; Sat: 11am-11pm</p>
+                  <a href="#" class="smallBtn">View on map</a>
+               </div>
+
+            </div>
+            <div class="detail">
+               <h3>2) Scottsdale</h3>
+               <div class="detailInfo">
+                  <p>
+                     2234 W. Scottsdale Road
+                  </p>
+                  <p>Scottsdale, AZ 85295</p>
+                  <p>(480)166-5556</p>
+
+               </div>
+               <div class="detailInfo">
+                  <p>Sun-Thu: 11am-10pm</p>
+                  <p>Fri &amp; Sat: 11am-11pm</p>
+                  <a href="#" class="smallBtn">View on map</a>
+               </div>
+            </div>
+            <div class="detail">
+               <h3>3) Tucson</h3>
+               <div class="detailInfo">
+                  <p>
+                     434 E. Tucson Road
+                  </p>
+                  <p>Tucson, AZ 85295</p>
+                  <p>(480)123-1532</p>
+               </div>
+               <div class="detailInfo">
+                  <p>Sun-Thu: 11am-10pm</p>
+                  <p>Fri &amp; Sat: 11am-11pm</p>
+                  <a href="#" class="smallBtn">View on map</a>
+               </div>
+            </div>
+         </div>
+      </div>
+
+   </main>
+   <footer>
+      <div class="socialMediaMenu">
+         <a href=""><img src="icons/facebookIcon.png"></a>
+         <a href=""><img src="icons/twitterIcon.png"></a>
+         <a href=""><img src="icons/instagramIcon.png"></a>
+      </div>
+      <ul>
+         <li><a href="">Contact</a></li>
+         <li><a href="">Work at Ta Lew</a></li>
+         <li><a href="">Privacy</a></li>
+         <li><a href="">Accessibility</a></li>
+      </ul>
+      <span>&copy; 2020 Ta Lew Restaurant</span>
+   </footer>
+</body>
+<!--<script src="script.js"></script>-->
+<script type="text/javascript">
+   var populateTime;
+   var timeOptions = document.getElementById("reserveTime");
+   /*Create an array to be populated with the available times one could reserve a table that day.*/
+   var availableTimes = [];
+
+   /*POPULATE ARRAY - Populate example times into the array for the sake of this example website.*/
+   for (i = 0; i < 20; i++) {
+      var insertedTime;
+      var amPm;
+      var x;
+      /*Add 8 to current iteration count i*/
+      x = (i + 8);
+      /*If 8+i*/
+      if (x === 23) {
+         break;
+      }
+      if (x > 12) {
+         x = (x - 12);
+         amPm = (" pm");
+      } else {
+         amPm = (" am");
+      }
+      if (x === 12) {
+         amPm = (" pm");
+      }
+      availableTimes.push(x + ":00" + amPm);
+      availableTimes.push(x + ":15" + amPm);
+      availableTimes.push(x + ":30" + amPm);
+      availableTimes.push(x + ":45" + amPm);
+   }
+
+   /*POPULATE TIME OPTIONS for user reservation*/
+   for (i = 0; i < availableTimes.length; i++) {
+      var option = document.createElement("option");
+      option.text = availableTimes[i];
+      option.value = availableTimes[i];
+      timeOptions.add(option);
+   }
+
+
+
+   /*Mobile Navigation*/
+   function myFunction() {
+      /*For the navigation elements*/
+      var x = document.getElementById("navMenu");
+      var menuBtn = document.getElementById("navBtn");
+      /*If the class name is /only/ "nav", add the class "responsive". This class makes the navigation menu visible*/
+      if (x.className === "nav") {
+         x.className += " responsive";
+         menuBtn.innerHTML = '<i class="fa fa-times" aria-hidden="true"></i>';
+      } else {
+         x.className = "nav";
+         menuBtn.innerHTML = '<i class="fa fa-bars"></i>';
+      }
+   }
+
+   var slideIndex = 1;
+   showDivs(slideIndex);
+
+   function plusDivs(n) {
+      showDivs(slideIndex += n);
+   }
+
+   function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("introSlide");
+      if (n > x.length) {
+         slideIndex = 1
+      }
+      if (n < 1) {
+         slideIndex = x.length
+      }
+      for (i = 0; i < x.length; i++) {
+         x[i].style.display = "none";
+      }
+      x[slideIndex - 1].style.display = "block";
+   }
+
+</script>
+
+</html>

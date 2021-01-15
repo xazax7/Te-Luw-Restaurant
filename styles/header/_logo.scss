@@ -1,0 +1,88 @@
+.logo {
+    cursor: pointer;
+    transition: 0.3s all;
+    border: 2px solid transparent;
+
+    &:hover {
+        //box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.342);
+        //transform: scale(1.05);
+
+        border: 2px solid $red;
+
+        .logo__circle {
+            background: white;
+        }
+
+        .logo__text {
+            color: $red;
+        }
+    }
+
+
+    &:hover &_text {
+        font-size: 2rem !important;
+        //transform: rotate(-3deg) !important;
+
+    }
+
+
+    &:active {
+        transform: scale(1) !important;
+        box-shadow: none !important;
+
+        .logo__circle {
+            background: $red;
+        }
+
+        .logo__text {
+            color: white;
+        }
+    }
+
+    height: $logo-size+3.5;
+    width: $logo-size+3.5;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &__circle {
+        height: $logo-size+3;
+        width: $logo-size+3;
+        border-radius: 50%;
+        background: $red;
+        display: table;
+        transition: 0.3s all;
+    }
+
+    &__text-container {
+        display: table-cell;
+        vertical-align: middle;
+    }
+
+    &__text {
+
+        font-family: "East Sea Dokdo", cursive !important;
+        text-transform: none !important;
+        font-size: $logo-size+1.5;
+        line-height: 1rem;
+        text-align: center;
+        color: white;
+        transform: rotate(-5deg);
+        transition: 0.3s all;
+        user-select: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .logo {
+        z-index: 5;
+        top: 2rem;
+    }
+
+    main {
+        overflow-x: hidden;
+    }
+}

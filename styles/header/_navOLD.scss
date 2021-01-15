@@ -1,0 +1,112 @@
+//  header {
+//    z-index: 3;
+//    position: fixed;
+//    width: 100%;
+//    background: white;
+//  }
+header {
+    z-index: 30;
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    transition: 0.3s;
+    padding: 0 $left-align 0.3rem $left-align+-1;
+    height: 4rem;
+  }
+  
+  .topnav {
+    //position: relative;
+  
+    & #myLinks {
+      display: none;
+    }
+  
+    a {
+      // padding: 2rem 3rem;
+      // background:white;
+      // text-decoration: none;
+      // display: block;
+      // color: $red;
+      //   &:hover {
+      //     background:rgb(240,240,240);
+      //   }
+    }
+  
+    a.icon {
+      color: grey;
+      //background: black;
+      display: block;
+      position: absolute;
+      font-size: 1.3rem;
+      padding: 1rem;
+      right: 0;
+      top: 0;
+    }
+  }
+  
+  //   Desktop screens
+  @media only screen and (min-width: 600px) {
+    .topnav #myLinks {
+      display: inline-block !important;
+    }
+  
+    .topnav #myLinks li {
+      display: inline-block;
+    }
+  
+    .topnav {
+      width: 100%;
+      display: flex;
+      flex-wrap: nowrap;
+      background-color: none;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+  
+    /* Style navigation menu links */
+    .topnav a {
+      display: inline-block;
+      // color:black;
+      // background:none;
+      // padding:0.3rem;
+    }
+  
+    /* Style the hamburger menu */
+    .topnav a.icon {
+      display: none;
+    }
+  
+    header {
+      margin: 0 auto;
+      z-index: 30;
+      background: white;
+      position: fixed;
+      top: 0;
+      height: 15vh;
+      width: 100%;
+      display: flex;
+      transition: 0.3s;
+      padding: 0 $left-align 0.3rem $left-align+-1;
+    }
+  
+    .frontpage__img {
+      margin-top: 15vh;
+      height: 70vh;
+      margin-bottom: 15vh;
+    }
+  
+    .small {
+      height: 4rem;
+  
+      // .logo {
+      //     height: $logo-size+2.5;
+      //     width: $logo-size+2.5;
+      //     &__circle {
+      //         $logo-size+
+      //     }
+      // }
+  
+    }
+  }

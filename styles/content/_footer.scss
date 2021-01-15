@@ -1,0 +1,44 @@
+footer {
+    background: $red;
+
+
+    padding: $left-align/2 $left-align $left-align/2 $left-align;
+    color: white;
+
+
+    span {
+        margin: 20px 0 0 0;
+        display: block;
+    }
+}
+
+.socialMediaMenu {
+    text-align: center;
+}
+
+.socialMediaMenu img {
+    cursor: pointer;
+    height: 40px;
+    margin: 0 10px 0;
+    transition: 0.25s;
+
+    &:hover {
+        filter: brightness(0);
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .socialMediaMenu {
+        float: right;
+    }
+
+    footer ul {
+        display: flex;
+    }
+
+    footer span {
+        text-align: left;
+        margin-left: 0;
+    }
+
+}

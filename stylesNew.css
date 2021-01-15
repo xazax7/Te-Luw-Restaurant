@@ -1,0 +1,547 @@
+*>* {}
+
+/*#ff3434*/
+body {
+   padding: 0;
+   margin: 0;
+   font-family: "helvetica";
+
+}
+
+a {
+   text-decoration: none;
+   color: black;
+}
+
+/*Header Styling*/
+
+header {
+   position: fixed;
+   top: 0;
+   width: 100%;
+}
+
+.headerBg {
+   position: fixed;
+   height: 70px;
+   width: 100vw;
+   background: #ffffff;
+   z-index: -1;
+}
+
+.title {
+   display: inline-block;
+   font-family: 'East Sea Dokdo', cursive;
+   font-size: 50px;
+   padding: 0px 15px;
+   color: #ff3434;
+}
+
+.nav {
+   display: none;
+   position: absolute;
+   top: 70px;
+   right: 0px;
+}
+
+.nav.responsive {
+   display: block;
+}
+
+.nav a {
+   min-width: 250px;
+   display: block;
+   background: white;
+   padding: 15px 25px;
+   margin: 0px;
+}
+
+.navDropDownBtn {
+   font-size: 34px;
+   position: absolute;
+   right: 0;
+   top: 0;
+   padding: 7px 20px;
+}
+
+.nav a:hover {
+   background-color: #ff3434;
+   color: white;
+}
+
+header {
+   z-index: 900;
+}
+
+.introPic img {
+   position: fixed;
+}
+
+/*Moves page content down to give room for header*/
+main {
+   margin-top: 70px;
+}
+
+.reservationsForm {
+   display: none;
+   margin: 0 auto;
+   padding: 5px;
+   text-align: center;
+   background: #dddddd;
+}
+
+.reservationsForm a,
+.reservationsForm input,
+.reservationsForm select {
+   border: 1px solid grey;
+   padding: 2px;
+   font-size: 14px;
+}
+
+.reservationsForm a {
+   padding: 3px;
+}
+
+.row {
+
+   text-align: center;
+}
+
+.padded {
+   padding: 35px;
+}
+
+.bgGrey {
+   color: white;
+   background: #2c2c2c;
+}
+
+.row h1 {
+   margin: 0;
+   text-transform: uppercase;
+   font-size: 24px;
+}
+
+.email {
+   text-align: center;
+   margin: 30px 0 0;
+   height: 40px;
+   font-size: 20px;
+}
+
+.submit {
+   color: white;
+   border: 1px solid white;
+   padding: 5px;
+   width: 150px;
+   margin: 0 auto;
+   text-transform: uppercase;
+   font-size: 20px;
+   font-weight: bolder;
+}
+
+.row .submit {
+   display: block;
+   margin: 20px auto;
+}
+
+.row label a {
+   color: white;
+   text-decoration: underline;
+}
+
+.submit:hover {
+   background: white;
+   color: #2c2c2c;
+}
+
+#readPrivacy {
+   margin: 15px 5px;
+   display: inline-block;
+}
+
+.row label {
+   font-size: 20px;
+
+}
+
+
+/*For Carousel Js*/
+.introSlide {
+   display: none;
+   overflow: hidden;
+   height: 80vh;
+}
+
+.introSlide img {}
+
+.carousel {
+   position: relative;
+   overflow: hidden;
+
+}
+
+.carouselLeftBtn,
+.carouselRightBtn {
+   text-shadow: 0px 0px 2px black;
+   top: 50%;
+   position: absolute;
+   border: none;
+   background: none;
+   font-size: 70px;
+   line-height: 1px;
+   cursor: pointer;
+   color: white;
+   padding: 10px;
+}
+
+.carouselLeftBtn {
+   left: 0;
+}
+
+.carouselRightBtn {
+   right: 0;
+}
+
+.carouselCaption {
+   color: #676767;
+   font-size: 20px;
+   padding: 10px 22px;
+   position: absolute;
+   bottom: 0px;
+   left: 0px;
+   background: rgb(255, 255, 255);
+   border-top-right-radius: 20px;
+   text-transform: uppercase;
+}
+
+.split {
+   /*
+   height:35vw;
+   min-height:300px;*/
+}
+
+.mdImg {
+   min-height: 300px;
+   max-height: 80vh;
+}
+
+.riceBowl {
+   background-image: url("sample/talew/images/thaiStarter.jpg");
+   background-size: cover;
+   background-repeat: no-repeat
+}
+
+/*.mdImg img {
+   width:auto;
+   height:100%;
+   display:block;
+   min-height:300px;
+}*/
+.mdImg {}
+
+.mdContent {
+   padding: 20px;
+   color: #2f2f2f;
+}
+
+.mdContent h3,
+.mdContent h2,
+.mdContent a {
+   text-transform: uppercase;
+   padding: 0;
+   margin: 0;
+}
+
+.mdContent h3 {
+   font-size: 19px;
+}
+
+.mdContent h2 {
+   font-weight: bolder;
+   font-family: serif;
+   line-height: 35px;
+   font-size: 40px;
+}
+
+.mdContent p {
+   line-height: 15px;
+}
+
+.mdContent a {
+   font-weight: bolder;
+}
+
+/*MENU STYLING*/
+/*   .menuItemHeader {
+      height: 100px;
+      width:600px;
+      display: block;
+      margin:10px auto;
+      line-height:80px;
+      padding:0;
+   }
+   .menuItemActive, .menuItemHeader:hover {
+      background-color: #ebebeb;
+   }
+   .menuItem {
+      width: 600px;
+      margin:0 auto;
+      padding:0;
+   }
+   .menuItemHeader p, .menuItem {
+      padding-left:10px;
+   }*/
+.menuPanel {
+   width: 100%;
+   /*margin:50px;*/
+}
+
+.menuPanel h1 {
+   text-align: center;
+}
+
+.menuItemHeader {
+   border: none;
+   width: 100%;
+   font-size: 25px;
+   font-weight: bold;
+   text-transform: uppercase;
+}
+
+.menuItemHeader,
+.menuItem {
+   padding-left: 30px;
+}
+
+.menuItemHeader p {
+   text-align: left;
+   margin: 0;
+   padding: 10px 0;
+}
+
+.menuItem {
+   display: none;
+   overflow: hidden;
+
+}
+
+.menuItem h3 {
+   margin: 0;
+   font-size: 20px;
+   font-weight: bold;
+   color: #ff3434;
+}
+
+.menuItem p {
+   text-align: left;
+   color: #3c3c3c;
+   margin: -5px 0 10px;
+   line-height: 18px;
+}
+
+
+.mdBlock,
+.map {
+   display: inline-block;
+   vertical-align: top;
+}
+
+.mdBlock {}
+
+.map {
+   height: 400px;
+   width: 400px;
+}
+
+.detail {
+   border: 3px solid #585858;
+   margin: 0 15px 10px;
+   text-align: left;
+}
+
+.detail>* {
+   padding: 5px 20px;
+}
+
+.detail h3 {
+   padding-left: 15px;
+   margin: 0;
+   color: white;
+   font-weight: bold;
+   background: #585858;
+   font-size: 18px;
+}
+
+.detailInfo {
+   display: inline-block;
+   vertical-align: top;
+   text-align: left;
+
+}
+
+.detailInfo:not(:first-of-type) {
+   float: right;
+}
+
+.detailInfo p {
+   padding: 3px;
+   margin: 3px;
+}
+
+.smallBtn {
+   background: grey;
+   color: white;
+   border-radius: 5px;
+   padding: 5px 10px;
+   float: right;
+}
+
+@media (max-width:599px) {
+   .title {
+      color: blue;
+   }
+
+   .mdImg,
+   .mdContent {}
+
+   .mdImg img {}
+
+   .mdContent {}
+
+   .split {
+      /*display:block;*/
+   }
+
+   .introSlide img {
+      height: 100%;
+      width: auto;
+   }
+}
+
+@media (min-width: 600px) {
+
+   .lgFloatRight {
+      float: right;
+
+   }
+
+   .lgFloatRight {
+      order: 2;
+   }
+
+   .split {
+      display: flex;
+   }
+
+   .mdImg {
+      height: 30vw;
+   }
+
+   .mdImg img {}
+
+   .mdContent,
+   .mdImg {
+      width: 50%;
+   }
+
+}
+
+/*Footer styling*/
+footer {
+   background: #575757;
+   color: white;
+   text-align: center;
+   padding: 15px;
+}
+
+footer ul {
+   margin: 0;
+   padding: 0;
+}
+
+footer li {
+   font-weight: bold;
+   padding: 5px;
+   list-style-type: none;
+   text-transform: uppercase;
+   font-size: 14px;
+}
+
+footer span {
+   margin: 20px;
+   display: block;
+}
+
+.socialMediaMenu img {
+   height: 40px;
+   margin: 10px 10px 30px;
+}
+
+@media (min-width: 980px) {
+
+   header {
+      position: relative;
+      max-width: 1400px;
+      display: block;
+      margin: 0 auto;
+      height: auto;
+   }
+
+   .headerBg {
+      display: none;
+   }
+
+   .navDropDownBtn {
+      display: none;
+   }
+
+   .nav a {
+      display: inline-block;
+      padding: 12px;
+      min-width: inherit;
+   }
+
+   .nav {
+      display: block;
+      position: static;
+   }
+
+   .navBar {
+      bottom: 0;
+      right: 20px;
+      position: absolute;
+   }
+
+   /*Moves page content under header*/
+   main {
+      margin-top: 0px;
+      min-height: 70vh;
+   }
+
+   .menuPanel {
+      width: 50%;
+      margin: 0 auto;
+   }
+
+   .reservationsForm {
+      display: block;
+   }
+
+   .socialMediaMenu {
+      float: right;
+   }
+
+   footer ul {
+      display: flex;
+   }
+
+   footer span {
+      text-align: left;
+      margin-left: 0;
+   }
+
+   footer li a:hover {
+      border-bottom: 2px solid white;
+   }
+}

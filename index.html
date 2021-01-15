@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai Restaurant</title>
+    <link href="https://fonts.googleapis.com/css?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+    <!--Title Font-->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<!-- 
+
+    Make images smaller, compress more.
+    lazy loading?
+    split mobile/desktop into separate CSS files?
+ -->
+
+<body>
+    <div class="bg"></div>
+    <header id="header">
+        <!-- Logo -->
+
+
+        <div class="nav">
+            <a href="./index.html">
+                <div class="logo">
+                    <div class="logo__circle">
+                        <div class="logo__text-container">
+                            <div class="logo__text">Ta<br>Lew</div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Main Navigation -->
+            <ul class="nav-ul">
+
+                <li><a href="./index.html" class="nav-ul__link">Home</a></li>
+                <li><a href="./menu.html" class="nav-ul__link">Menu</a></li>
+                <li><a href="./about.html" class="nav-ul__link">About Us</a></li>
+                <li><a href="./index.html#map" class="nav-ul__link">Find Us</a></li>
+                <li><a href="./menu.html" class="nav-ul__link">Order Online</a></li>
+                <li><a href="./index.html#map" class="nav-ul__link">Contact</a></li>
+            </ul>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="nav__icon">
+                &#x2630;
+            </a>
+            <div class="bg-overlay"></div>
+        </div>
+
+    </header>
+    <main id="top">
+
+
+        <div class="frontpage">
+
+            <!-- SVG slant background -->
+            <img class="red-slant" src="./images/method-draw-image.svg">
+
+
+
+
+            <!-- food photo -->
+            <div class="frontpage__img home-img">
+            </div>
+
+            <!-- text on svg slant -->
+            <div class="frontpage__txt">
+                <div class="frontpage__txt__content">
+                    <h1 class="word-break">Fresh Authentic Thai
+                    </h1>
+                    <button class="frontpage__txt__btn btn btn-white">
+                        <a href="./menu.html">View menu &#8594;</a>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="panel grid-2-container">
+
+            <div class="panel__text panel--sm grid-2-1">
+                <h1>Online Ordering</h1>
+                <p>Enjoy Ta Lew delivered to your door, or ready for curbside-pickup</p>
+                <button class="btn btn-red"><a href="./menu.html">Order Online &#8594;</a></button>
+            </div>
+
+            <img class="panel__img panel--lg grid-2-2" src="./images/thaiStarter.jpg" alt="">
+
+        </div>
+
+        <div class="panel grid-2-container grid-2-rev">
+
+            <div class="panel__text panel--sm grid-2-1">
+                <h1>Reservations</h1>
+                <p>Reserve your table for any get-together with family and friends!</p>
+                <button class="btn btn-red"><a href="./reservations.html">Make a Reservation &#8594;</a></button>
+            </div>
+            <img src="./images/thaiFood.jpg" class="panel__img panel--lg grid-2-2" alt="">
+
+        </div>
+
+        <div class="panel grid-2-container" id="map">
+            <div class="panel__text grid-2-1">
+                <h1>Find Us</h1>
+                <p>We are located at 123 E Fake St, Phoenix</p>
+
+                <p>Phone: <a href="(480)123-4567" type="tel">(480)123-4567</a></p>
+                <p>Hours: 11am-9pm Everyday</p>
+                <button class="btn btn-red"><a href="https://www.google.com/maps">Open In Maps &#8594;</a></button>
+            </div>
+            <div class="panel__img grid-2-2 grid-2-mobile-separate">
+                <iframe class="map"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6665.189733116129!2d-111.79251329101562!3d33.35553254123805!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872ba916df0dded3%3A0x6a54b4bec0827539!2s41%20W%20Page%20Ave%2C%20Gilbert%2C%20AZ%2085233!5e0!3m2!1sen!2sus!4v1579310681173!5m2!1sen!2sus"
+                    width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen="1"
+                    loading="lazy"></iframe>
+            </div>
+        </div>
+
+
+
+
+    </main>
+    <footer class="footer">
+        <div class="socialMediaMenu">
+            <a href=""><img src="./images/icons/facebookIcon.png" loading="lazy"></a>
+            <a href=""><img src="./images/icons/twitterIcon.png" loading="lazy"></a>
+            <a href=""><img src="./images/icons/instagramIcon.png" loading="lazy"></a>
+        </div>
+        <ul>
+            <li><a href="" class="btn btn-white btn-simple fill">Contact</a></li>
+            <li><a href="" class="btn btn-white btn-simple">Work at Ta Lew</a></li>
+            <li><a href="" class="btn btn-white btn-simple">Privacy</a></li>
+            <li><a href="" class="btn btn-white btn-simple">Accessibility</a></li>
+        </ul>
+        <span>&copy; 2020 Ta Lew Restaurant</span>
+    </footer>
+    <script type="text/javascript" src="./scripts/script.js"></script>
+</body>
+
+</html>

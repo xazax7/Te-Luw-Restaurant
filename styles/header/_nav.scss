@@ -1,0 +1,185 @@
+header {
+  //margin: 0 auto;
+
+  z-index: 30;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  transition: 0.3s;
+  padding: 0 $left-align 0 $left-align+-1;
+  height: 4rem;
+}
+
+//basically everything in the header. logo, nav
+.nav {
+
+  //nav menu 
+  &-ul {
+    right: -100%;
+    transition: 0.25s;
+    top: 4rem;
+    position: fixed;
+
+    //when the nav menu shows
+    &.showNav {
+      // right: 0;
+    }
+
+    // each link in the nav menu
+    &__link {
+      background: $red;
+      padding: 1.3rem 1.3rem;
+      display: block;
+      color: #fff;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  //mobile dropdown btn
+  &__icon {
+    color: $red;
+    display: block;
+    position: absolute;
+    font-size: 1.3rem;
+    padding: 1rem;
+    right: 0;
+    top: 0;
+  }
+
+  .bg-overlay {
+    height: 100vh;
+    width: 100vw;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    background: rgba(215, 236, 235, 0);
+    position: fixed;
+    z-index: -1;
+    transition: background 0.3s;
+  }
+
+  // When mobile nav menu is opened
+  &-active {
+    .nav__icon {
+      background: $red !important;
+      color: white !important;
+    }
+
+    .nav-ul {
+      right: 0;
+    }
+
+    .bg-overlay {
+      background: rgba(0, 0, 0, 0.596);
+      pointer-events: auto;
+    }
+
+  }
+}
+
+
+//   Desktop screens
+@media only screen and (min-width: 600px) {
+  header {
+    height: 15vh;
+    z-index: 30;
+    background: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    transition: 0.3s;
+  }
+
+  .header--hide {
+    height: 0;
+    top: -20vh;
+  }
+
+  .header--small {
+
+    //background: white;
+    height: 4rem !important;
+
+    //top: 0 !important;
+    //z-index: 50;
+    //top: 0;
+    .nav {
+
+      //height: auto;
+    }
+  }
+
+
+  .nav {
+    width: 100%;
+    //top: 0;
+    //height: 15vh;
+    transition: 0.3s;
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &-ul {
+      position: static;
+
+      li {
+        display: inline-block;
+      }
+
+      &__link {
+        background: none;
+        color: $red;
+        padding: 0.3rem 0.5rem;
+        font-size: 0.9rem;
+        transition: 0.3s ease-in-out;
+        overflow: hidden;
+        display: inline-block;
+        position: relative;
+
+        &::after {
+          transition: 0.3s ease-in-out;
+        }
+
+        &::before {
+          transition: 0.3s ease-in-out;
+          z-index: -1;
+          content: '';
+          position: absolute;
+          right: -50px;
+          left: 0;
+          top: 0;
+          bottom: 0;
+          border-right: 50px solid transparent;
+          border-bottom: 3rem solid $red;
+          transform: translateX(-100%);
+        }
+
+        &:hover {
+          color: #fff;
+          text-decoration: none;
+
+          &:before {
+            transform: translateX(0);
+          }
+        }
+      }
+    }
+
+    /* hamburger */
+    &__icon {
+      display: none;
+    }
+
+    .bg-overlay {
+      background: none;
+    }
+
+  }
+}

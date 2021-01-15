@@ -1,0 +1,155 @@
+// header {
+//     z-index: 30;
+//     background: white;
+//     position: fixed;
+//     top: 0;
+//     width: 100%;
+//     display: flex;
+//     transition: 0.3s;
+//     padding: 0 $left-align 0.3rem $left-align+-1;
+//     height: 4rem;
+// }
+.frontpage__img {}
+
+.small {
+
+
+    // .logo {
+    //     height: $logo-size+2.5;
+    //     width: $logo-size+2.5;
+    //     &__circle {
+    //         $logo-size+
+    //     }
+    // }
+
+}
+
+.menu__img {
+    // background: url(../../images/padthai.png);
+    // background-position: 50%;
+    // background-size: cover;
+    // margin-bottom: 1rem;
+}
+
+.fold-img {
+    // width: 100%;
+    // height: 40vh;
+}
+
+
+
+
+@media only screen and (min-width: 600px) {
+    // header {
+    //     z-index: 30;
+    //     background: white;
+    //     position: fixed;
+    //     //position: static;
+    //     top: 0;
+    //     height: 15vh;
+    //     width: 100%;
+    //     display: flex;
+    //     transition: 0.3s;
+    //     padding: 0 $left-align 0.3rem;
+    // }
+
+
+
+    .header--small {
+        //position: fixed;
+        //height: 4rem !important;
+
+        // .logo {
+        //     height: $logo-size+2.5;
+        //     width: $logo-size+2.5;
+        //     &__circle {
+        //         $logo-size+
+        //     }
+        // }
+
+    }
+
+    // a.nav-ul__link {
+    //     //padding: 1 !important;
+    //     transition: 0.3s ease-in-out;
+    //     position: relative;
+    //     display: inline-block;
+    //     overflow: hidden;
+
+    //     &::after {
+    //         transition: 0.3s ease-in-out;
+    //     }
+
+    //     &::before {
+    //         transition: 0.3s ease-in-out;
+    //         z-index: -1;
+    //         content: '';
+    //         position: absolute;
+    //         right: -50px;
+    //         left: 0;
+    //         top: 0;
+    //         bottom: 0;
+    //         border-right: 50px solid transparent;
+    //         border-bottom: 3rem solid $red;
+    //         transform: translateX(-100%);
+    //     }
+
+    //     &:hover {
+    //         color: #fff;
+    //         text-decoration: none;
+
+    //         &:before {
+    //             transform: translateX(0);
+    //         }
+    //     }
+    // }
+
+
+}
+
+.spec1 {
+    main {
+        //background: linear-gradient(white, $red);
+    }
+
+    .grid-2-1 {
+        box-shadow: 15px 15px 0px -5px rgba(0, 0, 0, 0.329);
+        //Orange bg
+        background: $red !important;
+
+        &>* {
+            color: white !important;
+        }
+    }
+}
+
+.spec12 {
+    main {
+        background: linear-gradient(white, $red);
+    }
+
+    .grid-2-1 {
+        //box-shadow: 15px 15px 0px -5px rgba(0, 0, 0, 0.329);
+        //Orange bg
+        background: $red !important;
+
+        &>* {
+            color: white !important;
+        }
+    }
+}
+
+.spec2 {
+    .grid-2-1 {
+        //width: 90% !important;
+        //right: -10rem;
+        left: 10%;
+
+        box-shadow: -15px 15px 0px -3px $red;
+    }
+}
+
+// .grid-2-container {
+//     grid-template-columns: auto auto;
+//     grid-template-rows: auto;
+// }

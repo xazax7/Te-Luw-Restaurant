@@ -1,0 +1,388 @@
+// Button styling
+.bg {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    background: url("../images/bg.png");
+    background-repeat: repeat;
+    opacity: 0.1;
+    background-size: 100px;
+    z-index: -1;
+}
+
+.btn {
+    transition: all 0.2s ease;
+    background: none;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    padding: 0rem 0.2rem;
+
+    &:hover {
+        letter-spacing: 1px;
+    }
+
+    &-white {
+        color: white;
+
+        a {
+            color: white;
+        }
+
+        border-bottom: 1px solid white;
+
+        &:hover {
+            background: white;
+            color: $red;
+
+            a {
+                color: $red;
+            }
+        }
+    }
+
+    &-red {
+        color: $red;
+
+        a {
+            color: $red;
+
+
+        }
+
+        border-bottom: 1px solid $red;
+
+
+        &:hover {
+            background: $red;
+            color: white;
+
+            a {
+                color: white;
+            }
+
+        }
+    }
+
+    &-simple {
+        border-bottom: none;
+        margin: 0 0.5rem 0 0;
+
+
+    }
+}
+
+
+// Most horizontal grid setups. grid-2-1 left, grid-2-2 right (unless reversed).
+.grid-2 {
+    &-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 0px 0px;
+    }
+
+    //First container in the grid
+    &-1 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    //Second container in the grid
+    &-2 {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    //On mobile screens, move this grid cell to the next row
+    &-mobile-separate {
+        grid-area: 2/1/3/2;
+    }
+}
+
+// Map iframe at the bottom of index.html
+.map {
+    height: 35vh;
+}
+
+//A 'horizontal' slide of the screen.
+.panel {
+    position: relative;
+    align-items: center;
+    min-height: 70vh;
+    margin: 1rem 0;
+
+    //Text within a panel
+    &__text {
+        padding: $left-align;
+        position: relative;
+        background: rgba(255, 255, 255, 0.904);
+
+        p {
+            color: rgba(0, 0, 0, 0.651);
+            //margin: 0 0 1rem 0;
+        }
+
+        .btn {
+            margin-top: 1.5rem;
+        }
+    }
+
+    &__img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+// FONTS
+h1,
+h2 {
+    font-family: Georgia, serif;
+
+}
+
+p,
+h3 {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+a,
+button {
+    text-transform: uppercase;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.word-break {
+    word-spacing: 3000px;
+}
+
+//General "Frontpage" styling
+.frontpage {
+    position: relative;
+
+    &__img {
+        height: 95vh;
+        background: url('/sample/thai/images/noodle_bowl.jpg');
+        background-position: 25%;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+    }
+
+    .menu-img {
+        background: url('/sample/thai/images/padthai.png');
+    }
+
+    .location-img {
+        background: url("/sample/thai/images/thaiChefs.jpg");
+        background-position: 100%;
+    }
+
+    .fold-img {
+        height: 40vh;
+        background-size: cover;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    &__txt {
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(rgba(255, 51, 0, 0), 35%, $red 100%);
+        color: white;
+        padding: 5rem 10% 2rem;
+        line-height: 0.8;
+        font-size: 1.5rem;
+        user-select: none;
+    }
+}
+
+.red-slant {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .red-slant {
+        display: inline;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 87vw;
+    }
+
+    .frontpage {
+        &__img {
+            background-position: 15vw;
+            background-size: cover;
+            height: 70vh;
+            margin: 15vh 0;
+        }
+
+        &__txt {
+            width: 50vw;
+            height: 100%;
+            background: none;
+            display: flex;
+            padding: 0;
+
+            &__content {
+                margin: 0 auto;
+                align-self: center;
+                position: absolute;
+                //right:13vw;
+                //text-align:left;
+                padding-left: $left-align;
+
+                h1 {
+                    font-size: 6vw;
+                }
+            }
+        }
+    }
+
+}
+
+
+
+
+//Styling specifically for menu.html
+.menu {
+    &-container {
+        margin-bottom: 3rem;
+    }
+
+    &-category {
+        h2 {
+            background: $red;
+            color: white;
+            padding: 0.3rem;
+            font-size: 2rem;
+            display: inline-block;
+            margin: 0 0 0.5rem 0;
+        }
+
+        padding-bottom:0;
+    }
+
+    //The "jump to..." links
+    &-list {
+        padding: 0.3rem $left-align;
+    }
+}
+
+
+//The image that is in the "fold"
+.fold-img__txt {
+    width: 100%;
+    height: 100%;
+    color: white;
+    //background: linear-gradient(90deg, rgba(250, 113, 72, 0.76), rgba(190, 160, 77, 0.637));
+    background: linear-gradient(45deg, rgba(250, 113, 72, 0.911) 30%, rgba(165, 165, 165, 0));
+    text-align: center;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    position: absolute;
+
+    h1 {
+        align-self: end;
+        padding-left: $left-align;
+        margin: 0;
+        font-size: 10vw;
+    }
+}
+
+// DESKTOPS
+@media only screen and (min-width: 600px) {
+    main {
+        //background: linear-gradient(white, $red);
+        // background: rgb(247, 243, 243);
+    }
+
+    .panel {
+        height: 75vh;
+
+        margin: 5rem 0;
+
+        &--sm {
+            background: white;
+            right: -20%;
+            //box-shadow: 15px 15px 0px -5px rgba(0, 0, 0, 0.329);
+            left: 0;
+            width: 120%;
+        }
+
+        &--lg {
+            width: 58vw;
+        }
+    }
+
+    .grid-2-rev {
+        .panel--sm {
+            right: 0;
+            left: -20%;
+            width: 120%;
+        }
+    }
+
+
+    .grid-2 {
+        &-container {
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        &-1 {
+            grid-area: 1 / 1 / 2 / 2;
+
+            h1 {
+                //font-size: 3rem;
+            }
+
+            //Orange bg
+            //background: $red !important;
+
+            // &>* {
+            //     color: white !important;
+            // }
+        }
+
+        &-2 {
+            grid-area: 1 / 2 / 2 / 3;
+            //background: white;
+
+
+        }
+
+        // Reverse grid order on larger screens.
+        &-rev {
+            .grid-2-1 {
+                grid-area: 1 / 2 / 2 / 3;
+                //right: 0;
+                //left: -3vw;
+            }
+
+            .grid-2-2 {
+                grid-area: 1 / 1 / 2 / 2;
+
+
+            }
+        }
+
+        &-overlay {
+            display: none;
+        }
+
+
+    }
+
+    .map {
+        height: 100%;
+        width: 100%;
+    }
+}

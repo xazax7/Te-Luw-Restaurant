@@ -1,0 +1,82 @@
+main {
+    *>* {
+        //background: rgba(88, 41, 216, 0.219);
+    }
+}
+
+.frontpage {
+    h1 {
+        word-spacing: 9999px;
+    }
+
+    position:relative;
+
+    &__img {
+        height: 90vh;
+        background: url('../../images/noodle_bowl.jpg');
+        background-position: 25%;
+        /* Center the image */
+        background-repeat: no-repeat;
+        /* Do not repeat the image */
+        background-size: cover;
+        width: 100%;
+    }
+
+    &__txt {
+        position: absolute;
+        bottom: 0;
+        background: linear-gradient(rgba(255, 51, 0, 0), 35%, $red 100%);
+        width: 100%;
+        color: white;
+        padding: 5rem 10% 0;
+        line-height: 0.8;
+        font-size: 1.5rem;
+    }
+}
+
+.red-slant {
+    display: none;
+}
+
+@media only screen and (min-width: 600px) {
+    .red-slant {
+        display: inline;
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 87vw;
+    }
+
+    .frontpage {
+        &__img {
+            background-position: 15vw;
+            background-size: cover;
+            height: 80vh;
+        }
+
+        &__txt {
+            width: 50vw;
+            height: 100%;
+            //background: linear-gradient(280deg, rgba(255, 51, 0, 0), 15vw, $red 10%);
+            background: none;
+            display: flex;
+            //text-align:right;
+            padding: 0;
+
+            &__content {
+                margin: 0 auto;
+                align-self: center;
+                position: absolute;
+                //right:13vw;
+                //text-align:left;
+                padding-left: $left-align;
+
+                h1 {
+                    font-size: 6.3vw;
+                }
+            }
+        }
+    }
+
+}
