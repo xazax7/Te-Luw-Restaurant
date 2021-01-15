@@ -250,7 +250,7 @@ header {
   top: 0;
   background: url("../images/bg.png");
   background-repeat: repeat;
-  opacity: 0.1;
+  opacity: 0.03;
   background-size: 100px;
   z-index: -1;
 }
@@ -258,10 +258,10 @@ header {
 .btn {
   transition: all 0.2s ease;
   background: none;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border: none;
   cursor: pointer;
-  padding: 0rem 0.2rem;
+  padding: 0rem 0.4rem;
 }
 
 .btn:hover {
@@ -342,11 +342,16 @@ header {
 .panel__text {
   padding: 9vw;
   position: relative;
-  background: rgba(255, 255, 255, 0.904);
+  background: rgba(250, 73, 42, 0.9);
+  z-index: 2;
+}
+
+.panel__text h1 {
+  color: white;
 }
 
 .panel__text p {
-  color: rgba(0, 0, 0, 0.651);
+  color: white;
 }
 
 .panel__text .btn {
@@ -354,9 +359,36 @@ header {
 }
 
 .panel__img {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.panel__img img {
   object-fit: cover;
   width: 100%;
   height: 100%;
+  border: 1px solid orange;
+}
+
+.panel__img::after {
+  content: " ";
+  position: absolute;
+  width: 96%;
+  height: 96%;
+  top: 2%;
+  left: 2%;
+  z-index: 2;
+  border: 1px solid rgba(255, 166, 0, 0.486);
+  user-select: none;
+  pointer-events: none;
+}
+
+.map {
+  z-index: 100 !important;
+  position: relative;
 }
 
 h1,
@@ -384,7 +416,7 @@ button {
 }
 
 .frontpage__img {
-  height: 95vh;
+  height: 100vh;
   background: url("/sample/thai/images/noodle_bowl.jpg");
   background-position: 25%;
   background-repeat: no-repeat;
@@ -456,10 +488,13 @@ button {
 }
 
 .menu-container {
+  margin: 0 auto;
   margin-bottom: 3rem;
+  max-width: 1200px;
 }
 
 .menu-category {
+  padding: 2rem;
   padding-bottom: 0;
 }
 
@@ -470,6 +505,15 @@ button {
   font-size: 2rem;
   display: inline-block;
   margin: 0 0 0.5rem 0;
+}
+
+.menu-category h3 {
+  font-size: 1.3rem;
+}
+
+.menu-category p {
+  margin-bottom: 1.3rem;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .menu-list {
@@ -502,17 +546,14 @@ button {
   }
   .panel--sm {
     background: white;
-    right: -20%;
-    left: 0;
     width: 120%;
+    background: #fa492a;
   }
   .panel--lg {
     width: 58vw;
   }
   .grid-2-rev .panel--sm {
     right: 0;
-    left: -20%;
-    width: 120%;
   }
   .grid-2-container {
     grid-template-columns: 1fr 1fr;
@@ -536,6 +577,24 @@ button {
   .map {
     height: 100%;
     width: 100%;
+  }
+  .panel-left {
+    left: 10%;
+    box-shadow: -14px 10px 2px -5px rgba(71, 50, 44, 0.233);
+  }
+  .panel-right {
+    left: -30% !important;
+    box-shadow: 14px 10px 2px -5px rgba(71, 50, 44, 0.233);
+  }
+  .contact-panel {
+    background: #fa492a;
+  }
+  .bg-red {
+    background: #fa492a;
+    border: 1px solid white;
+  }
+  .bg-white {
+    background: rgba(255, 255, 255, 0.8);
   }
 }
 
